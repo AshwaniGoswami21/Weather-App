@@ -9,7 +9,7 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body background="images/Weather.jpg">
     <div class="weather-widget">
         <div class="weather-header">
             <img src="images/Logo.png" alt="Logo" class="logo">

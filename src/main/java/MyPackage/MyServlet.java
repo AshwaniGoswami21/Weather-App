@@ -98,6 +98,9 @@ public class MyServlet extends HttpServlet {
 		
 		//Wind speed
 		double windSpeed = jsonObject.getAsJsonObject("wind").get("speed").getAsDouble();
+		double windSpeedKmh = windSpeed * 3.6;
+	    	DecimalFormat df = new DecimalFormat("#.#");
+	    	String formattedSpeed = df.format(windSpeedKmh);
 		
 		String weatherCondition = jsonObject.getAsJsonArray("weather").get(0).getAsJsonObject().get("main").getAsString();
 		
